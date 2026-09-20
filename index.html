@@ -4,24 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Nexora — Tech, Refined.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="page">
-        <header class="header">
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-            </ul>
-        </header>
+    <header class="site-header" id="top">
+        <a class="logo" href="index.html">NEXORA<span>.</span></a>
+        <nav class="nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="#featured">Featured</a>
+            <a href="#about">About</a>
+        </nav>
+        <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">NEW SEASON / 2026</p>
+                <h1>Tech that<br><em>fits your world.</em></h1>
+                <p class="hero-text">Curated gear for your desk, your setup, and everything in between.</p>
+                <a class="button" href="shop.html">Explore the collection <span>→</span></a>
+            </div>
+            <div class="hero-art reveal">
+                <div class="orb"></div>
+                <div class="hero-device">
+                    <span>NEXORA</span>
+                    <strong>01</strong>
+                </div>
+                <p>PRECISION<br>MEETS DESIGN</p>
+            </div>
+        </section>
 
-        <footer class="footer">@ Hesam Sormeyli // SVM845</footer>
-        <script src="./js/script.js"></script>
-    </div>
+        <section class="ticker" aria-label="Nexora benefits">
+            <span>FREE SHIPPING OVER $100</span><span>30-DAY RETURNS</span><span>CURATED TECH</span><span>SECURE
+                CHECKOUT</span>
+        </section>
+
+        <section class="section" id="featured">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">CURATED FOR YOU</p>
+                    <h2>Featured gear</h2>
+                </div>
+                <a href="shop.html" class="text-link">View all →</a>
+            </div>
+            <div class="product-grid" id="featured-products"></div>
+        </section>
+
+        <section class="editorial" id="about">
+            <div class="editorial-image reveal">
+                <div class="editorial-card">N<span>/</span>X</div>
+            </div>
+            <div class="editorial-copy reveal">
+                <p class="eyebrow">THE NEXORA STANDARD</p>
+                <h2>Less noise.<br>Better tech.</h2>
+                <p>We believe your setup should feel intentional. Nexora brings together reliable, beautifully designed
+                    tech
+                    without the endless scrolling.</p>
+                <a href="shop.html" class="text-link">Shop the collection →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div><a class="logo" href="index.html">NEXORA<span>.</span></a>
+            <p>Tech, refined.</p>
+        </div>
+        <div class="footer-links"><a href="shop.html">Shop</a><a href="cart.html">Cart</a><a href="#top">Back to top
+                ↑</a>
+        </div>
+        <p>© 2026 Nexora</p>
+    </footer>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
